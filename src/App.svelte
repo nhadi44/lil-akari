@@ -22,7 +22,7 @@
   const HEADER_TITLE = "lilakari";
   const HEADER_LINK = "https://solarare.com";
   // Your image or GIF needs to be in the /public folder for this to work
-  const IMAGE_LINK = "/example.gif";
+  const IMAGE_LINK = "/0.png";
   /***********************************/
 
   let { solana } = window as any;
@@ -110,7 +110,7 @@
   });
 </script>
 
-<main class="h-screen">
+<main class="h-screen bg-slate-800">
   <!-- Error section -->
   {#if errorOcurred}
     <div class=" h-full flex">
@@ -129,13 +129,13 @@
     {#if HEADER_TITLE}
       <a
         href={HEADER_LINK}
-        class="text-black tracking-widest underline underline-offset-4 decoration-2 font-mono"
+        class="text-white tracking-widest underline underline-offset-4 decoration-2 font-mono"
         >{HEADER_TITLE}</a
       >
     {/if}
     <!-- Card -->
     <div
-      class=" max-w-lg mx-auto bg-white rounded-lg my-12  border-2"
+      class=" max-w-lg mx-auto bg-stone-500 rounded-lg my-12  border-2"
       transition:fade
     >
       <!-- Top Bar -->
@@ -144,18 +144,18 @@
       <br />
       <!-- Main Body -->
       <div class="p-6">
-        <img src={IMAGE_LINK} alt="" class=" w-1/2 mx-auto m-5" />
+        <img src={IMAGE_LINK} alt="" class=" w-1/2 mx-auto m-5 rounded-sm" />
         <div
           class=" text-lg sm:text-2xl font-mono font-bold py-5 tracking-wider"
         >
           {TITLE}
         </div>
-        <div class="text-sm sm:text-md font-semibold pb-5 text-gray-600 ">
+        <div class="text-sm sm:text-md font-semibold pb-5 text-gray-200 ">
           {DESCRTIPTION}
         </div>
         <Button {connection} />
 
-        <div class=" tracking-widest font-bold text-sm pt-3 text-gray-400">
+        <div class=" tracking-widest font-bold text-sm pt-3 text-gray-700">
           {itemsRedeemed}/{itemsAvailable} claimed
         </div>
         <div class="flex flex-col pt-3">

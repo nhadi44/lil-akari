@@ -256,7 +256,7 @@
     <div />
   {:else if !isWhiteListed}
     {#if !isMint}
-      <button class=" btn-black" disabled={true}
+      <button class=" btn-black text-slate-900 font-semibold" disabled={true}
         >Mint Live @ {dateNew.toUTCString()}</button
       >
     {:else}
