@@ -16,9 +16,10 @@
 
   /***********************************/
   // Customise the app by changing the following variables.
-  const TITLE = "Shapes";
-  const DESCRTIPTION = "A collection of shapes on the blockchain";
-  const HEADER_TITLE = "shapes.xyz";
+  const TITLE = "555 LIL AKARI";
+  const DESCRTIPTION =
+    "is a collection of unique characters from Japanese philosophy that will create a virtuous community on the #solana blockchain";
+  const HEADER_TITLE = "lilakari";
   const HEADER_LINK = "https://solarare.com";
   // Your image or GIF needs to be in the /public folder for this to work
   const IMAGE_LINK = "/example.gif";
