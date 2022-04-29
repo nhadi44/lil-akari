@@ -22,7 +22,7 @@
   const HEADER_TITLE = "lilakari";
   const HEADER_LINK = "https://solarare.com";
   // Your image or GIF needs to be in the /public folder for this to work
-  const IMAGE_LINK = "/0.png";
+  const IMAGE_LINK = "/7.png";
   /***********************************/
 
   let { solana } = window as any;
