@@ -286,7 +286,7 @@
         <span>Mint succesful! Mint another?</span>
       {:else}
         <span
-          >Whitelist Mint ({(nftPrice() / LAMPORTS_PER_SOL).toFixed(2)} SOL)</span
+          >Whitelist Mint ({(nftPrice() / LAMPORTS_PER_SOL).toFixed(1)} SOL)</span
         >
       {/if}</button
     >
