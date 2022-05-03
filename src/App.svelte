@@ -196,7 +196,7 @@
     </div>
   {/if}
 </main>
-<div class="min-h-screen bg-[url(/bg.jpg)] bg-no-repeat bg-cover " id="roadmap">
+<!-- <div class="min-h-screen bg-[url(/bg.jpg)] bg-no-repeat bg-cover " id="roadmap">
   <div class="relative w-full min-h-screen">
     <div class="px-6 py-10 2xl:py-16 flex items-center justify-center">
       <h1 class="text-white uppercase font-semibold text-3xl">Roadmap</h1>
@@ -355,4 +355,4 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->

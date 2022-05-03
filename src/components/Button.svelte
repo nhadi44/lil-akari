@@ -260,21 +260,21 @@
         >Mint Live @ {dateNew.toUTCString()}</button
       >
     {:else}
-    <button
-      class="px-3 py-2 rounded-md  bg-sky-600  hover:bg-sky-700 text-white font-bold disabled:bg-gray-400"
-      disabled={isMinting}
-      on:click={mint}
-    >
-      {#if isMinting}
-        <span>Minting ...</span>
-      {:else if mintSuccessful}
-        <span>Mint succesful! Mint another?</span>
-      {:else}
-        <span>Mint ({(nftPrice() / LAMPORTS_PER_SOL).toFixed(1)} SOL)</span>
-      {/if}
-    </button>
+      <button
+        class="px-3 py-2 rounded-md  bg-sky-600  hover:bg-sky-700 text-white font-bold disabled:bg-gray-400"
+        disabled={isMinting}
+        on:click={mint}
+      >
+        {#if isMinting}
+          <span>Minting ...</span>
+        {:else if mintSuccessful}
+          <span>Mint succesful! Mint another?</span>
+        {:else}
+          <span>Mint ({(nftPrice() / LAMPORTS_PER_SOL).toFixed(1)} SOL)</span>
+        {/if}
+      </button>
     {/if}
-    {:else}
+  {:else}
     <button
       class="px-3 py-2 rounded-md  bg-sky-600  hover:bg-sky-700 text-white font-bold disabled:bg-gray-400"
       disabled={isMinting}
