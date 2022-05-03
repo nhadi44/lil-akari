@@ -274,7 +274,7 @@
         {/if}
       </button>
     {/if}
-  {:else}
+  <!-- {:else}
     <button
       class="px-3 py-2 rounded-md  bg-sky-600  hover:bg-sky-700 text-white font-bold disabled:bg-gray-400"
       disabled={isMinting}
@@ -289,6 +289,6 @@
           >Whitelist Mint ({(nftPrice() / LAMPORTS_PER_SOL).toFixed(1)} SOL)</span
         >
       {/if}</button
-    >
+    > -->
   {/if}
 </div>
