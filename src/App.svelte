@@ -328,7 +328,7 @@
           <h1 class="text-slate-100 font-semibold uppercase text-2xl">
             Satoshi
           </h1>
-          <h1 class="text-white capitalize">art direktur</h1>
+          <h1 class="text-white capitalize">art Director</h1>
         </div>
       </div>
       <div
@@ -349,9 +349,7 @@
         <div
           class="absolute -bottom-14 2xl:-bottom-20 text-center flex justify-center w-full flex-col bg-gray-800 rounded-sm py-2"
         >
-          <h1 class="text-slate-100 font-semibold uppercase text-2xl">
-            Kira
-          </h1>
+          <h1 class="text-slate-100 font-semibold uppercase text-2xl">Kira</h1>
           <h1 class="text-white capitalize">Developer</h1>
         </div>
       </div>
