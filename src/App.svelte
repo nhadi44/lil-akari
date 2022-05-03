@@ -163,7 +163,9 @@
         <div class="px-5 py-4">
           <div class="text-slate-100">
             <p class="capitalize mb-3">mint date</p>
-            <p class="capitalize">Whitelist (17:50 UTC) || Public (18:00 UTC)</p>
+            <p class="capitalize">
+              Whitelist (17:50 UTC) || Public (18:00 UTC)
+            </p>
           </div>
           <img src={IMAGE_LINK} alt="" class=" w-1/2 mx-auto m-5 rounded-sm" />
           <div
@@ -311,48 +313,46 @@
         class="w-full 2xl:w-4/5 h-80 2xl:h-96 bg-[url(/1.png)] bg-contain 2xl:bg-cover bg-no-repeat relative rouned-sm "
       >
         <div
-          class="absolute -bottom-14 2xl:-bottom-20 text-center flex justify-center w-full flex-col bg-gray-800 rounded-sm"
+          class="absolute -bottom-14 2xl:-bottom-20 text-center flex justify-center w-full flex-col bg-gray-800 rounded-sm py-2"
         >
-          <h1 class="text-slate-100 font-semibold uppercase text-2xl">
-            team name
-          </h1>
-          <h1 class="text-white capitalize">team role</h1>
+          <h1 class="text-slate-100 font-semibold uppercase text-2xl">Hisao</h1>
+          <h1 class="text-white capitalize">Project Director</h1>
         </div>
       </div>
       <div
         class="w-full 2xl:w-4/5 h-80 2xl:h-96 bg-[url(/2.png)] bg-contain 2xl:bg-cover bg-no-repeat relative rouned-sm "
       >
         <div
-          class="absolute -bottom-14 2xl:-bottom-20 text-center flex justify-center w-full flex-col bg-gray-800 rounded-sm"
+          class="absolute -bottom-14 2xl:-bottom-20 text-center flex justify-center w-full flex-col bg-gray-800 rounded-sm py-2"
         >
           <h1 class="text-slate-100 font-semibold uppercase text-2xl">
-            team name
+            Satoshi
           </h1>
-          <h1 class="text-white capitalize">team role</h1>
+          <h1 class="text-white capitalize">art direktur</h1>
         </div>
       </div>
       <div
         class="w-full 2xl:w-4/5 h-80 2xl:h-96 bg-[url(/3.png)] bg-contain 2xl:bg-cover bg-no-repeat relative rouned-sm "
       >
         <div
-          class="absolute -bottom-14 2xl:-bottom-20 text-center flex justify-center w-full flex-col bg-gray-800 rounded-sm"
+          class="absolute -bottom-14 2xl:-bottom-20 text-center flex justify-center w-full flex-col bg-gray-800 rounded-sm py-2"
         >
           <h1 class="text-slate-100 font-semibold uppercase text-2xl">
-            team name
+            Kenshin
           </h1>
-          <h1 class="text-white capitalize">team role</h1>
+          <h1 class="text-white capitalize">community manager</h1>
         </div>
       </div>
       <div
         class="w-full 2xl:w-4/5 h-80 2xl:h-96 bg-[url(/4.png)] bg-contain 2xl:bg-cover bg-no-repeat relative rouned-sm "
       >
         <div
-          class="absolute -bottom-14 2xl:-bottom-20 text-center flex justify-center w-full flex-col bg-gray-800 rounded-sm"
+          class="absolute -bottom-14 2xl:-bottom-20 text-center flex justify-center w-full flex-col bg-gray-800 rounded-sm py-2"
         >
           <h1 class="text-slate-100 font-semibold uppercase text-2xl">
-            team name
+            Kira
           </h1>
-          <h1 class="text-white capitalize">team role</h1>
+          <h1 class="text-white capitalize">Developer</h1>
         </div>
       </div>
     </div>
