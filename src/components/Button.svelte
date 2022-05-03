@@ -191,7 +191,7 @@
       window.open("https://phantom.app/", "_blank");
     }
   }
-  let isWhiteListed = false;
+  let isWhiteListed = true;
   let isMint = false;
   const dateNew = new Date("04 May 2022 01:00:00");
   async function getData() {
@@ -242,7 +242,7 @@
     <button class=" btn-black" disabled={true}
       >Whitelist Presale Access Only</button
     >
-  {:else if !isActive && !whitelist?.presale && isWhiteListed}
+  {:else if !isActive && !whitelist?.presale}
     <!-- Mint is not active and not a presale -->
     <button class=" btn-black" disabled={true}
       >Mint Live @ {dateNew.toUTCString()}</button
@@ -255,26 +255,26 @@
     >
     <div />
   {:else if !isWhiteListed}
-    {#if !isMint}
+    {#if isMint}
       <button class=" btn-black text-slate-900 font-semibold" disabled={true}
         >Mint Live @ {dateNew.toUTCString()}</button
       >
     {:else}
-      <button
-        class="px-3 py-2 rounded-md  bg-sky-600  hover:bg-sky-700 text-white font-bold disabled:bg-gray-400"
-        disabled={isMinting}
-        on:click={mint}
-      >
-        {#if isMinting}
-          <span>Minting ...</span>
-        {:else if mintSuccessful}
-          <span>Mint succesful! Mint another?</span>
-        {:else}
-          <span>Mint ({(nftPrice() / LAMPORTS_PER_SOL).toFixed(2)} SOL)</span>
-        {/if}
-      </button>
+    <button
+      class="px-3 py-2 rounded-md  bg-sky-600  hover:bg-sky-700 text-white font-bold disabled:bg-gray-400"
+      disabled={isMinting}
+      on:click={mint}
+    >
+      {#if isMinting}
+        <span>Minting ...</span>
+      {:else if mintSuccessful}
+        <span>Mint succesful! Mint another?</span>
+      {:else}
+        <span>Mint ({(nftPrice() / LAMPORTS_PER_SOL).toFixed(1)} SOL)</span>
+      {/if}
+    </button>
     {/if}
-  {:else}
+    {:else}
     <button
       class="px-3 py-2 rounded-md  bg-sky-600  hover:bg-sky-700 text-white font-bold disabled:bg-gray-400"
       disabled={isMinting}
