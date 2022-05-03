@@ -251,7 +251,7 @@
     <button
       class=" px-3 py-2 rounded-md  bg-sky-600  hover:bg-sky-700 text-white font-bold disabled:bg-gray-400"
       disabled={true}
-      >Insufficient Funds ({(nftPrice() / LAMPORTS_PER_SOL).toFixed(2)} SOL required)</button
+      >Insufficient Funds ({(nftPrice() / LAMPORTS_PER_SOL).toFixed(1)} SOL required)</button
     >
     <div />
   {:else if !isWhiteListed}
