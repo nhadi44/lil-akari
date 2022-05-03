@@ -2,7 +2,11 @@ const config = {
   content: ["./src/**/*.{html,js,svelte,ts}"],
 
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        lemon: ["Lemon/Milk", "sans-serif"],
+      },
+    },
   },
 
   plugins: [],
