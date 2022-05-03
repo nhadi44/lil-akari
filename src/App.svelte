@@ -22,7 +22,7 @@
   const HEADER_TITLE = "lilakari";
   const HEADER_LINK = "/";
   // Your image or GIF needs to be in the /public folder for this to work
-  const IMAGE_LINK = "/7.png";
+  const IMAGE_LINK = "/logo.gif";
   /***********************************/
 
   let { solana } = window as any;
@@ -151,13 +151,20 @@
     {/if}
     <!-- Card -->
     <div class="flex items-center justify-center min-h-screen">
-      <div class="max-w-sm bg-stone-500 rounded-lg border-2 " transition:fade>
+      <div
+        class="max-w-sm 2xl:max-w-xl bg-stone-500 rounded-lg border-2 "
+        transition:fade
+      >
         <!-- Top Bar -->
         <Header />
         <hr />
         <br />
         <!-- Main Body -->
         <div class="px-5 py-4">
+          <div class="text-slate-100">
+            <p class="capitalize mb-3">mint date</p>
+            <p class="capitalize">Whitelist (17:50 UTC) || Public (18:00 UTC)</p>
+          </div>
           <img src={IMAGE_LINK} alt="" class=" w-1/2 mx-auto m-5 rounded-sm" />
           <div
             class=" text-lg sm:text-2xl font-mono font-bold py-5 tracking-widest"
