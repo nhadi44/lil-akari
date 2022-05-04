@@ -242,7 +242,7 @@
     <button class=" btn-black" disabled={true}
       >Whitelist Presale Access Only</button
     >
-  {:else if !isActive && !whitelist?.presale}
+  {:else if !isActive && !whitelist?.presale && isWhiteListed}
     <!-- Mint is not active and not a presale -->
     <button class=" btn-black" disabled={true}
       >Mint Live @ {dateNew.toUTCString()}</button
@@ -254,7 +254,7 @@
       >Insufficient Funds ({(nftPrice() / LAMPORTS_PER_SOL).toFixed(1)} SOL required)</button
     >
     <div />
-  {:else if !isWhiteListed}
+  {:else if isWhiteListed}
     {#if isMint}
       <button class=" btn-black text-slate-900 font-semibold" disabled={true}
         >Mint Live @ {dateNew.toUTCString()}</button
